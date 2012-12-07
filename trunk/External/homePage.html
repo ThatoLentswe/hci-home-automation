@@ -3,32 +3,71 @@
 <head> 
 	<title>My Page</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<meta http-equiv="Content-Type" content="text-html"; charset="UTF-8"/>
+	<link rel="stylesheet" href="css/rtl.jquery.mobile-1.2.0.css" />
 	<link rel="stylesheet" type="text/css" href="css/TapReplica.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/customize.css">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/rtl.jquery.mobile-1.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
 </head> 
 <body> 
 
-<div data-role="page">
-
+<div data-role="page" id="homePage">
 	<div data-role="header" data-position="fixed">
-
-	<a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-	<a href="#" data-role="button" data-icon="home" class="ui-btn-left" data-iconpos="notext">inbox</a>
+		<a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+		<a href="#" data-role="button" data-icon="home" class="ui-btn-left" data-iconpos="notext">inbox</a>
+		<h1>Home</h1>
 		
-		<h1></h1>
-		
-	
 	</div><!-- /header -->
 
+	<!-- Search bar -->
+	<div class="ui-bar ui-bar-b" style="border-bottom:solid 1px #aaa;" id="searchBar">
+		<input type="search" name="search" id="search" value="" placeholder="بحث سريع " data-theme="b"  class="setBlackIcon">
+	</div>
+	<!-- /Search bar -->
 	<div data-role="content">	
+
+		<ul data-role="listview" class="feed">
+			<li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">كريم شكري دخل البيت </span>
+				<span class="time">من 5 دقايق </span>
+			</li>
+
+			<li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">تم غلق محبس الغاز</span>
+				<span class="time">من 7 دقايق </span>
+			</li>
+
+			<li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">تم فتح التكييف  </span>
+				<span class="time">من 10 دقايق </span>
+			</li>
+
+			<li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">كريم شكري دخل البيت </span>
+				<span class="time"></span>
+			</li>	
+			<li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">كريم شكري دخل البيت </span>
+				<span class="time"></span>
+			</li><li>
+				<span class="icon"><span class="icon-tracking"></span></span>
+				<span class="text">كريم شكري دخل البيت </span>
+				<span class="time"></span>
+			</li>								
+
+		</ul>
 		
-
-<!-- right the contents here -->
-
-
-
 
 
 

@@ -1,0 +1,64 @@
+.blackIcon::after{
+
+	background-image: url(images/icons-18-black.png) !important;
+	background-repeat: no-repeat;
+	
+}
+
+.feed li{
+	height:50px;
+	
+	background-repeat: no-repeat;
+	position: relative;
+	border-top: none;
+	overflow: hidden;
+}
+
+/*.feed li span.icon{
+	position: absolute;
+	right: 10px;
+	top:20px;
+	background-repeat: no-repeat;
+	height:50px;
+	background-color: yellow;
+
+}*/
+
+.feed li span.icon{
+	position: absolute;
+	width:80px;
+	height: 80px;
+	background-image: -webkit-linear-gradient( #FFF5BA,#FBDD52 );
+	background-image: -moz-linear-gradient( #FFF5BA,#FBDD52 );
+	background-image: -ms-linear-gradient( #FFF5BA,#FBDD52 );
+	background-image: -o-linear-gradient( #FFF5BA,#FBDD52 );
+	background-image: linear-gradient( #FFF5BA,#FBDD52 );
+	border-left: 1px solid #F2C43D;
+	border-bottom: 1px solid #F2C43D;
+	right:0px;
+	top:0px;
+
+}
+.feed li span.text{
+	position: absolute;
+	right: 100px;
+	top:25px;
+}
+.feed li span.time{
+	position: absolute;
+	left:10px;
+	top:53px;
+	font-size: 11px;
+	color:#aaa;
+}
+.icon-tracking{
+	background: url(../img/trackingBTN-black.png);
+	width:15px;
+	height: 25px;
+	background-size: 15px 25px;
+	position: absolute;
+	right:31px;
+	top:23px;
+
+}
+
