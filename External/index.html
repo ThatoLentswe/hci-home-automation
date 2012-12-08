@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>INNOVA</title>
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+  -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-   <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="telephone=no" />
   <meta http-equiv="Content-Type" content="text-html"; charset="UTF-8"/>
 
   <link rel="stylesheet" href="css/rtl.jquery.mobile-1.2.0.css" />
@@ -15,20 +16,18 @@
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script src="js/rtl.jquery.mobile-1.2.0.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-   <script type="text/javascript" src="cordova-2.2.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+  <script type="text/javascript" src="cordova-2.2.0.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">app.initialize();</script>
 </head>
 <body>
-<!-- =================================================================================Splash Page -->
+  <!-- =================================================================================Splash Page -->
   <div data-role="page" id="splash" style="background-image: url(img/splashIMG.png); background-repeat: no-repeat;background-position: 80% 50%;background-size: 320px 480px;">
-  <div class="splash" >
-    
-    <img src="img/ajax-loader.gif" style="margin-top:80%; margin-bottom:0px; margin-right:130px; margin-left:20%;" />
+    <div class="splash" >
 
-    <script type='text/javascript'>//<![CDATA[ 
+      <img src="img/ajax-loader.gif" style="margin-top:80%; margin-bottom:0px; margin-right:130px; margin-left:20%;" />
+
+      <script type='text/javascript'>//<![CDATA[ 
              $(window).load(function(){
              $(function() {
                  setTimeout(hideSplash, 4000);
@@ -41,764 +40,723 @@
 
              });//]]> </script>
 
+    </div>
   </div>
-</div>
 
-<!-- =================================================================================login Page -->
-<div data-role="page" id="login">
+  <!-- =================================================================================login Page -->
+  <div data-role="page" id="login">
 
-  <div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed">
 
-    <h1></h1>
+      <h1></h1>
 
-  </div>
-  <!-- /header -->
+    </div>
+    <!-- /header -->
 
-  <div data-role="content">
+    <div data-role="content">
 
-    <img src="img/logo.png" style="margin:0 auto; display: block">
-    <BR>
-    <BR>
-
-    <form>
-      <label for="basic"> <b>اسم المستخدم :</b>
-      </label>
-      <input type="text" name="name" id="basic" data-mini="true" />
-
-      <label for="basic"> <b>كلمة المرور :</b>
-      </label>
-      <input type="text" name="name" id="basic" data-mini="true" />
-    </form>
-
-    <a href="#home" data-role="button" data-transition="flip" data-theme="e">دخول</a>
-
-  </div>
-  <!-- /content -->
-</div>
-<!-- /page -->
-<!-- =================================================================================Home Page -->
-<!-- Home page -->
-<div data-role="page" id="home">
-  <div data-role="header" data-position="fixed">
-    <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-    <a href="#slidingPage" data-transition="flip" data-role="button" class="ui-btn-left" data-iconpos="notext" style="background-image: url(img/slider.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;" >inbox</a>
-
-
-
-
-    <h1>Home</h1>
-
-  </div>
-  <!-- /header -->
-
-  <!-- Search bar -->
-  <div class="ui-bar ui-bar-b" style="border-bottom:solid 1px #aaa;" id="searchBar">
-    <input type="search" name="search" id="search" value="" placeholder="بحث سريع " data-theme="b"  class="setBlackIcon"></div>
-  <!-- /Search bar -->
-  <div data-role="content">
-
-    <ul data-role="listview" class="feed">
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">كريم شكري دخل البيت</span>
-        <span class="time">من 5 دقايق</span>
-      </li>
-
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">تم غلق محبس الغاز</span>
-        <span class="time">من 7 دقايق</span>
-      </li>
-
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">تم فتح التكييف</span>
-        <span class="time">من 10 دقايق</span>
-      </li>
-
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">كريم شكري دخل البيت</span>
-        <span class="time"></span>
-      </li>
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">كريم شكري دخل البيت</span>
-        <span class="time"></span>
-      </li>
-      <li>
-        <span class="icon">
-          <span class="icon-tracking"></span>
-        </span>
-        <span class="text">كريم شكري دخل البيت</span>
-        <span class="time"></span>
-      </li>
-
-    </ul>
-
-  </div>
-  <!-- /content -->
-  <div data-role="footer">
-    <h4>all right reserved INNOVA &copy 2012</h4>
-  </div>
-</div>
-<!-- /home page -->
-
-<!-- =================================================================================Sliding Page -->
-<div data-role="page" id="slidingPage">
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#home" data-transition="flip" data-role="button" data-icon="home" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1></h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/logo.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-
-<BR>
-  <BR>
-    <BR>
+      <img src="img/logo.png" style="margin:0 auto; display: block">
+      <BR>
       <BR>
 
-<a href="#controlPage" data-transition="slide" data-role="button" data-icon="grid" class="ui-btn-center" data-theme="e">التحكم</a>
-<HR>
-<a href="#securityPage" data-transition="slide" data-role="button" data-icon="alert" class="ui-btn-center" data-theme="e">الأمن</a>
-    
+      <form>
+        <label for="basic"> <b>اسم المستخدم :</b>
+        </label>
+        <input type="text" name="name" id="basic" data-mini="true" />
+
+        <label for="basic"> <b>كلمة المرور :</b>
+        </label>
+        <input type="text" name="name" id="basic" data-mini="true" />
+      </form>
+
+      <a href="#home" data-role="button" data-transition="flip" data-theme="e">دخول</a>
+
+    </div>
+    <!-- /content --> </div>
+  <!-- /page -->
+  <!-- =================================================================================Home Page -->
+  <!-- Home page -->
+  <div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#slidingPage" data-transition="flip" data-role="button" class="ui-btn-left" data-iconpos="notext" style="background-image: url(img/slider.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;" >inbox</a>
+
+      <h1>Home</h1>
+
+    </div>
+    <!-- /header -->
+
+    <!-- Search bar -->
+    <div class="ui-bar ui-bar-b" style="border-bottom:solid 1px #aaa;" id="searchBar">
+      <input type="search" name="search" id="search" value="" placeholder="بحث سريع " data-theme="b"  class="setBlackIcon"></div>
+    <!-- /Search bar -->
+    <div data-role="content">
+
+      <ul data-role="listview" class="feed">
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">كريم شكري دخل البيت</span>
+          <span class="time">من 5 دقايق</span>
+        </li>
+
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">تم غلق محبس الغاز</span>
+          <span class="time">من 7 دقايق</span>
+        </li>
+
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">تم فتح التكييف</span>
+          <span class="time">من 10 دقايق</span>
+        </li>
+
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">كريم شكري دخل البيت</span>
+          <span class="time"></span>
+        </li>
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">كريم شكري دخل البيت</span>
+          <span class="time"></span>
+        </li>
+        <li>
+          <span class="icon">
+            <span class="icon-tracking"></span>
+          </span>
+          <span class="text">كريم شكري دخل البيت</span>
+          <span class="time"></span>
+        </li>
+
+      </ul>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- /home page -->
+
+  <!-- =================================================================================Sliding Page -->
+  <div data-role="page" id="slidingPage">
+    <div data-role="header" data-position="fixed">
+
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#home" data-transition="flip" data-role="button" data-icon="home" class="ui-btn-left" data-iconpos="notext">inbox</a>
+
+      <h1></h1>
+
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+      <img src="img/logo.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
       <BR>
-  </div><!-- /content -->
-<div data-role="footer"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================Control -->
-<div data-role="page" id="controlPage">
+      <BR>
+      <BR>
+      <BR>
 
-  <div data-role="header" data-position="fixed">
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="grid" class="ui-btn-center" data-theme="e">التحكم</a>
+      <HR>
+      <a href="#securityPage" data-transition="slide" data-role="button" data-icon="alert" class="ui-btn-center" data-theme="e">الأمن</a>
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#slidingPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
+      <BR></div>
+    <!-- /content -->
+    <div data-role="footer">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================Control -->
+  <div data-role="page" id="controlPage">
 
-    
-    <h1></h1>
-    
-  
-  </div><!-- /header -->
+    <div data-role="header" data-position="fixed">
 
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#slidingPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
+      <h1></h1>
 
+    </div>
+    <!-- /header -->
 
+    <div data-role="content">
 
-<a href="#kitchen" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/kitchenBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;"><B>االمطبخ</B></a>
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-<a href="#livingroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/livingroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 21px;">غرفة المعيشة</a>
+      <a href="#kitchen" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/kitchenBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">
+        <B>االمطبخ</B>
+      </a>
 
-<a href="#bathroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/bathroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">الحمام</a>
+      <a href="#livingroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/livingroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 21px;">غرفة المعيشة</a>
 
-<a href="#bedroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/bedroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 20px 25px;">غرفة النوم</a>
+      <a href="#bathroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/bathroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">الحمام</a>
 
-    
+      <a href="#bedroom" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/bedroomBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 20px 25px;">غرفة النوم</a>
 
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================Security -->
-<div data-role="page" id="securityPage">
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================Security -->
+  <div data-role="page" id="securityPage">
 
-  <div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed">
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#slidingPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-  
-    <h1></h1>
-    
-  
-  </div><!-- /header -->
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#slidingPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-  <div data-role="content"> 
-    
-<img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <h1></h1>
 
-
-
+    </div>
+    <!-- /header -->
 
-<a href="#smartkey" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/smartKeyBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;"><B>القفل الذكي</B></a>
+    <div data-role="content">
+
+      <img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
+
+      <a href="#smartkey" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/smartKeyBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">
+        <B>القفل الذكي</B>
+      </a>
+
+      <a href="#camera" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/cameraBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 21px;">كاميرات المراقبة</a>
+
+      <a href="#alarm" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/alarmBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">الانذار</a>
+
+      <a href="#tracking" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/trackingBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 20px 25px;">نظام التتبع</a>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================livingroom -->
+  <div data-role="page" id="livingRoom">
 
-<a href="#camera" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e" style="background-image: url(img/cameraBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 21px;">كاميرات المراقبة</a>
+    <div data-role="header" data-position="fixed">
 
-<a href="#alarm" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/alarmBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 25px 25px;">الانذار</a>
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-<a href="#tracking" data-transition="slide" data-role="button"  class="ui-btn-center" data-theme="e"style="background-image: url(img/trackingBTN.png);background-repeat: no-repeat;background-position: 80% 50%;background-size: 20px 25px;">نظام التتبع</a>
+      <h1>غرفة المعيشة</h1>
 
-    
+    </div>
+    <!-- /header -->
 
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================livingroom -->
-<div data-role="page" id="livingRoom">
+    <div data-role="content">
 
-  <div data-role="header" data-position="fixed">
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>غرفة المعيشة</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-<label for="flip-1">الستائر:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">معطرالهواء:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">االنور:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-
-
-<a href="#ac" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>التكيف</B></a>
-<a href="#tv" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>التلفاز</B></a>
-
-
-
-
-    
-
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================bathroom -->
-<div data-role="page" id="bathroom">
-
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>الحمام</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-<label for="flip-1">الغاز الطبيعي:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">معطرالهواء:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">شفاطالهواء:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-
-
-<a href="#water" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>نظام المياه</B></a>
-
-
-
-
-    
-
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================kitchen -->
-<div data-role="page" id="kitchen">
-
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>المطبخ</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-
-
-<a href="#microwave" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>ميكرويف</B></a>
-
-  
-<label for="flip-1">غاز طبيعي:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-
-
-
-<label for="flip-1">شفاط هواء:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-
-
-
-
-
-    
-
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================bedroom -->
-<div data-role="page" id="bedroom">
-
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#conntrolPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>غرفة النوم</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-<label for="flip-1">الستائر:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">معطرالهواء:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-<label for="flip-1">االنور:</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
-  <option value="off">مفتوح</option>
-  <option value="on">مقفول</option>
-</select> 
-
-
-<a href="#ac" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>التكيف</B></a>
-<a href="#tv" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e"><B>التلفاز</B></a>
-
-
-
-
-    
-
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================alaram -->
-<div data-role="page" id="alarm">
-
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>الانذار</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-<label for="flip-1">الانذار الصامت</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-track-theme="e" >
-  <option value="1">مفعل</option>
-    <option value="2">مغلق</option>
-</select> 
-<HR>
-
-<B>من:</B>
-<input name="timeflipbox" id="timeflipbox" type="date" data-role="timeflipbox"
+      <label for="flip-1">الستائر:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">معطرالهواء:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">االنور:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+
+      <a href="#ac" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>التكيف</B>
+      </a>
+      <a href="#tv" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>التلفاز</B>
+      </a>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================bathroom -->
+  <div data-role="page" id="bathroom">
+
+    <div data-role="header" data-position="fixed">
+
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
+
+      <h1>الحمام</h1>
+
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
+
+      <label for="flip-1">الغاز الطبيعي:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">معطرالهواء:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">شفاطالهواء:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+
+      <a href="#water" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>نظام المياه</B>
+      </a>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================kitchen -->
+  <div data-role="page" id="kitchen">
+
+    <div data-role="header" data-position="fixed">
+
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
+
+      <h1>المطبخ</h1>
+
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
+
+      <a href="#microwave" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>ميكرويف</B>
+      </a>
+
+      <label for="flip-1">غاز طبيعي:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+
+      <label for="flip-1">شفاط هواء:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================bedroom -->
+  <div data-role="page" id="bedroom">
+
+    <div data-role="header" data-position="fixed">
+
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#conntrolPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
+
+      <h1>غرفة النوم</h1>
+
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
+
+      <label for="flip-1">الستائر:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">معطرالهواء:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+      <label for="flip-1">االنور:</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-theme="e">
+        <option value="off">مفتوح</option>
+        <option value="on">مقفول</option>
+      </select>
+
+      <a href="#ac" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>التكيف</B>
+      </a>
+      <a href="#tv" data-transition="pop" data-role="button" data-icon="gear"  class="ui-btn-center" data-theme="e">
+        <B>التلفاز</B>
+      </a>
+
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================alaram -->
+  <div data-role="page" id="alarm">
+
+    <div data-role="header" data-position="fixed">
+
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
+
+      <h1>الانذار</h1>
+
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+      <img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
+
+      <label for="flip-1">الانذار الصامت</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-track-theme="e" >
+        <option value="1">مفعل</option>
+        <option value="2">مغلق</option>
+      </select>
+      <HR>
+
+      <B>من:</B>
+      <input name="timeflipbox" id="timeflipbox" type="date" data-role="timeflipbox"
    data-options='{"mode": "timeflipbox", "timeFormatOverride": 12}'>
 
-<B>إلى:</B>
+      <B>إلى:</B>
 
-<input name="timeflipbox" id="timeflipbox" type="date" data-role="timeflipbox"
+      <input name="timeflipbox" id="timeflipbox" type="date" data-role="timeflipbox"
    data-options='{"mode": "timeflipbox" ,"timeFormatOverride": 12}'>
 
-<a href="#DONE" data-role="button" data-theme="e" >تفعيل</a>
+      <a href="#activated" data-role="button" data-rel="popup" data-position-to="window" data-transition="slidedown" data-icon="arrow-r" style="color:green "data-theme="e" data-mini="true">تفعيل</a>
 
 
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================camera -->
-<div data-role="page" id="camera">
+      <div data-role="popup" id="activated" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم التفعيل بنجاح </p>
+     </div>
+      <div data-role="popup" id="disabled" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم الإلغاء بنجاح </p>
+     </div>
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================camera -->
+  <div data-role="page" id="camera">
 
-  <div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed">
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>كاميرات المراقبة</h1>
-    
-  
-  </div><!-- /header -->
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-  <div data-role="content"> 
-    
-<img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <h1>كاميرات المراقبة</h1>
 
-<img src="img/warning.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:120px;">
-<BR>
-  <HR>
-<LABEL>عفوا انت غير مشترك في هذه الخدمة</LABEL>
+    </div>
+    <!-- /header -->
 
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================smartkey -->
-<div data-role="page" id="smartkey">
+    <div data-role="content">
 
-  <div data-role="header" data-position="fixed">
+      <img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>القفل الذكي</h1>
-    
-  
-  </div><!-- /header -->
+      <img src="img/warning.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:120px;">
+      <BR>
+      <HR>
+      <LABEL>عفوا انت غير مشترك في هذه الخدمة</LABEL>
 
-  <div data-role="content"> 
-    
-<img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================smartkey -->
+  <div data-role="page" id="smartkey">
 
+    <div data-role="header" data-position="fixed">
 
-<img id="sliderImg" src="img/openedLock.png" style="margin-top:20px; margin-bottom:0px; margin-right:0px; margin-left:50px;display:inline;" >
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-<img id="sliderImg" src="img/closedLock.png" style="display:inline;" >
+      <h1>القفل الذكي</h1>
 
+    </div>
+    <!-- /header -->
 
+    <div data-role="content">
 
+      <img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-<label for="flip-1">الباب الرئيسي</label>
-<select name="flip-1" id="flip-1" data-role="slider" data-track-theme="e" >
-  <option value="1">مقفول</option>
-    <option value="2">مفتوح</option>
-</select> 
+      <img id="sliderImg" src="img/openedLock.png" style="margin-top:20px; margin-bottom:0px; margin-right:0px; margin-left:50px;display:inline;" >
 
-<script type="text/javascript">
+      <img id="sliderImg" src="img/closedLock.png" style="display:inline;" >
 
+      <label for="flip-1">الباب الرئيسي</label>
+      <select name="flip-1" id="flip-1" data-role="slider" data-track-theme="e" >
+        <option value="1">مقفول</option>
+        <option value="2">مفتوح</option>
+      </select>
 
+      <script type="text/javascript"></script>
 
-</script> 
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================tracking -->
+  <div data-role="page" id="tracking">
 
+    <div data-role="header" data-position="fixed">
 
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
+      <h1>نظام التتبع</h1>
 
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================tracking -->
-<div data-role="page" id="tracking">
+    </div>
+    <!-- /header -->
 
-  <div data-role="header" data-position="fixed">
+    <div data-role="content">
 
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#securityPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>نظام التتبع</h1>
-    
-  
-  </div><!-- /header -->
+      <img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-  <div data-role="content"> 
-    
-<img src="img/securityPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <a href="#" data-role="button" data-icon="check"  class="ui-btn-center" data-theme="e">
+        <B>حسام سرايا</B>
+      </a>
 
+      <a href="#" data-role="button"  class="ui-btn-center" data-icon="check" data-theme="e" >كريم شكري</a>
 
+      <a href="#" data-role="button"  class="ui-btn-center" data-icon="delete" data-theme="a">محمد شوشة</a>
 
-<a href="#" data-role="button" data-icon="check"  class="ui-btn-center" data-theme="e"><B>حسام سرايا</B></a>
+      <a href="#" data-role="button"  class="ui-btn-center" data-icon="check" data-theme="e">عمرو الانصاري</a>
 
-<a href="#" data-role="button"  class="ui-btn-center" data-icon="check" data-theme="e" >كريم شكري</a>
+      <a href="#" data-role="button"  class="ui-btn-center" data-icon="delete" data-theme="a">مينا علاء</a>
 
-<a href="#" data-role="button"  class="ui-btn-center" data-icon="delete" data-theme="a">محمد شوشة</a>
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================microwave -->
+  <div data-role="page" id="microwave">
 
-<a href="#" data-role="button"  class="ui-btn-center" data-icon="check" data-theme="e">عمرو الانصاري</a>
+    <div data-role="header" data-position="fixed">
 
-<a href="#" data-role="button"  class="ui-btn-center" data-icon="delete" data-theme="a">مينا علاء</a>
+      <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#kitchen" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-    
+      <h1>ميكرويف</h1>
 
-    
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================microwave -->
-<div data-role="page" id="microwave">
+    </div>
+    <!-- /header -->
 
-  <div data-role="header" data-position="fixed">
+    <div data-role="content">
 
-  <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#kitchen" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>ميكرويف</h1>
-    
-  
-  </div><!-- /header -->
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <img src="img/microwave.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
 
-<img src="img/microwave.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
+      <HR>
 
-<HR>
+      <label for="slider-mini">التوقيت:</label>
+      <input type="range" name="slider-mini" id="slider-mini" value="25" min="0" max="100" data-highlight="true" data-mini="true" data-theme="e"  />
 
-<label for="slider-mini">التوقيت:</label>
-<input type="range" name="slider-mini" id="slider-mini" value="25" min="0" max="100" data-highlight="true" data-mini="true" data-theme="e"  />
+      <fieldset data-role="controlgroup">
+        <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" data-theme="e" />
+        <label for="checkbox-2">فك التجميد</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" data-theme="e" />
+        <label for="checkbox-1">تحضير سريع</label>
+      </fieldset>
 
+      <a href="#disabled" data-role="button" data-rel="popup" data-position-to="window" data-transition="slidedown" data-icon="delete" style="color:red" data-theme="e" data-mini="true" >ايقاف</a>
+      <a href="#activated" data-role="button" data-rel="popup" data-position-to="window" data-transition="slidedown" data-icon="arrow-r" style="color:green "data-theme="e" data-mini="true">تشغيل</a>
 
 
-    <fieldset data-role="controlgroup">
-     <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" data-theme="e" />
-     <label for="checkbox-2">فك التجميد</label>
-      <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" data-theme="e" />
-     <label for="checkbox-1">تحضير سريع</label>
-    </fieldset>
 
-    <a href="#" data-role="button" data-icon="delete" style="color:red" data-theme="e" data-mini="true" >ايقاف</a>
-    <a href="#" data-role="button" data-icon="arrow-r" style="color:green "data-theme="e" data-mini="true">تشغيل</a>
+      <div data-role="popup" id="activated" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم التفعيل بنجاح </p>
+     </div>
+      <div data-role="popup" id="disabled" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم الإلغاء بنجاح </p>
+     </div>
 
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================tv -->
+  <div data-role="page" id="tv">
 
+    <div data-role="header" data-position="fixed">
 
+      <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
+      <h1>التلفاز</h1>
 
+    </div>
+    <!-- /header -->
 
+    <div data-role="content">
 
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
+      <img src="img/tv.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
 
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================tv -->
-<div data-role="page" id="tv">
+      <HR>
 
-  <div data-role="header" data-position="fixed">
+      <div data-role="controlgroup" data-type="horizontal" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+        <a href="#" data-role="button" data-theme="e"  >1</a>
+        <a href="#" data-role="button" data-theme="e" >2</a>
+        <a href="#" data-role="button" data-theme="e">3</a>
+      </div>
 
-  <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>التلفاز</h1>
-    
-  
-  </div><!-- /header -->
+      <div data-role="controlgroup" data-type="horizontal" data-theme="e" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;" >
+        <a href="#" data-role="button" data-theme="e"  >4</a>
+        <a href="#" data-role="button" data-theme="e" >5</a>
+        <a href="#" data-role="button" data-theme="e">6</a>
+      </div>
 
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+      <div data-role="controlgroup" data-type="horizontal" data-theme="e"  style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+        <a href="#" data-role="button" data-theme="e"  >7</a>
+        <a href="#" data-role="button" data-theme="e" >8</a>
+        <a href="#" data-role="button" data-theme="e">9</a>
+      </div>
 
-<img src="img/tv.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
+      <div data-role="controlgroup" data-type="horizontal" data-theme="e" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;" >
+        <a href="#" data-role="button" data-icon="arrow-u" data-theme="e" data-iconpos="notext" data-mini="true" ></a>
+        <a href="#" data-role="button" data-theme="e" >0</a>
+        <a href="#" data-role="button" data-icon="arrow-d" data-theme="e" data-iconpos="notext" data-mini="true"></a>
+      </div>
 
-<HR>
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================AC -->
+  <div data-role="page" id="ac">
 
-<div data-role="controlgroup" data-type="horizontal" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<a href="#" data-role="button" data-theme="e"  >1</a>
-<a href="#" data-role="button" data-theme="e" >2</a>
-<a href="#" data-role="button" data-theme="e">3</a>
-</div>
+    <div data-role="header" data-position="fixed">
 
-<div data-role="controlgroup" data-type="horizontal" data-theme="e" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;" >
-<a href="#" data-role="button" data-theme="e"  >4</a>
-<a href="#" data-role="button" data-theme="e" >5</a>
-<a href="#" data-role="button" data-theme="e">6</a>
-</div>
+      <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-<div data-role="controlgroup" data-type="horizontal" data-theme="e"  style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<a href="#" data-role="button" data-theme="e"  >7</a>
-<a href="#" data-role="button" data-theme="e" >8</a>
-<a href="#" data-role="button" data-theme="e">9</a>
-</div>
+      <h1>التكيف</h1>
 
-<div data-role="controlgroup" data-type="horizontal" data-theme="e" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;" >
-<a href="#" data-role="button" data-icon="arrow-u" data-theme="e" data-iconpos="notext" data-mini="true" > </a>
-<a href="#" data-role="button" data-theme="e" >0</a>
-<a href="#" data-role="button" data-icon="arrow-d" data-theme="e" data-iconpos="notext" data-mini="true"> </a>
-</div>
+    </div>
+    <!-- /header -->
 
+    <div data-role="content">
 
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
+      <img src="img/ac.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
 
+      <HR>
 
+      <label for="slider-mini">ضبط الحرارة:</label>
+      <input type="range" name="slider-mini" id="slider-mini" value="25" min="0" max="100" data-highlight="true" data-mini="true" data-theme="e"  />
 
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================AC -->
-<div data-role="page" id="ac">
+      <a href="#disabled" data-role="button" data-rel="popup" data-position-to="window" data-transition="slidedown" data-icon="delete" style="color:red" data-theme="e" data-mini="true" >ايقاف</a>
+      <a href="#activated" data-role="button" data-rel="popup" data-position-to="window" data-transition="slidedown" data-icon="arrow-r" style="color:green "data-theme="e" data-mini="true">تشغيل</a>
 
-  <div data-role="header" data-position="fixed">
 
-  <a href="#" data-role="button" data-icon="back" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="gear" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>التكيف</h1>
-    
-  
-  </div><!-- /header -->
+      <div data-role="popup" id="activated" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم التفعيل بنجاح </p>
+     </div>
+      <div data-role="popup" id="disabled" class="ui-content" data-overlay-theme="e" >
+         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+        <p align="center" style="padding:10px;width:200px;">تم الإلغاء بنجاح </p>
+     </div>
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
+  <!-- =================================================================================Water -->
+  <div data-role="page" id="water">
 
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
+    <div data-role="header" data-position="fixed">
 
-<img src="img/ac.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:80px;">
+      <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
+      <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
 
-<HR>
+      <h1>نظام المية</h1>
 
-<label for="slider-mini">ضبط الحرارة:</label>
-<input type="range" name="slider-mini" id="slider-mini" value="25" min="0" max="100" data-highlight="true" data-mini="true" data-theme="e"  />
+    </div>
+    <!-- /header -->
 
+    <div data-role="content">
 
+      <img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
+      <!-- right the contents here -->
 
-  <a href="#" data-role="button" data-icon="delete" style="color:red" data-theme="e" data-mini="true" >ايقاف</a>
-    <a href="#" data-role="button" data-icon="arrow-r" style="color:green "data-theme="e" data-mini="true">تشغيل</a>
+      <img src="img/warning.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:120px;">
+      <BR>
+      <HR>
+      <LABEL>عفوا انت غير مشترك في هذه الخدمة</LABEL>
 
+    </div>
+    <!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>all right reserved INNOVA &copy 2012</h4>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-<!-- =================================================================================Water -->
-<div data-role="page" id="water">
-
-  <div data-role="header" data-position="fixed">
-
-  <a href="#" data-role="button" data-icon="gear" class="ui-btn-right" data-iconpos="notext"  >Settings</a>
-  <a href="#controlPage" data-transition="slide" data-role="button" data-icon="back" class="ui-btn-left" data-iconpos="notext">inbox</a>
-    
-    <h1>نظام المية</h1>
-    
-  
-  </div><!-- /header -->
-
-  <div data-role="content"> 
-    
-<img src="img/controlPageLOGO.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:50px;">
-<!-- right the contents here -->
-
-<img src="img/warning.png" style="margin-top:10px; margin-bottom:0px; margin-right:0px; margin-left:120px;">
-<BR>
-  <HR>
-<LABEL>عفوا انت غير مشترك في هذه الخدمة</LABEL>
-
-  </div><!-- /content -->
-<div data-role="footer" data-position="fixed"> 
-  <h4>all right reserved INNOVA &copy 2012</h4> 
-</div> 
-</div>
-
-<!-- ============================================================================== POP UPS -->
-
-
-      
-
-
-
+  <!-- ============================================================================== POP UPS -->
 
 
 </body>
